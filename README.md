@@ -20,3 +20,12 @@
 > 示例图
 
 ![示例图](/image/sample.gif)
+
+| 代码中的示例动画名称 | 预览 |
+|-------------------|-----|
+| index | ![index](/image/index.gif) |
+| demo1 | ![demo1](/image/demo1.gif) |
+| demo2 | ![demo2](/image/demo2.gif) |
+| demo3 | ![demo3](/image/demo3.gif) |
+| demo4 | ![demo4](/image/demo4.gif) |
+| demo5 | ![demo5](/image/demo5.gif) |
