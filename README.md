@@ -1,4 +1,4 @@
-#### lottie-web-caption-animation
+### lottie-web-caption-animation
 > Bodymovin导出json使用lottie-web实现字幕标题动画样例
 
 > 主要测试了以下功能：
@@ -21,11 +21,8 @@
 
 ![示例图](/image/sample.gif)
 
-| 代码中的示例动画名称 | 预览 |
-| :-: | :-: |
-| index | <div align="center"><img width="200" height="auto" src="/image/index.gif"/></div> |
-| demo1 | <div align="center"><img width="200" height="auto" src="/image/demo1.gif"/></div> |
-| demo2 | <div align="center"><img width="200" height="auto" src="/image/demo2.gif"/></div> |
-| demo3 | <div align="center"><img width="200" height="auto" src="/image/demo3.gif"/></div> |
-| demo4 | <div align="center"><img width="200" height="auto" src="/image/demo4.gif"/></div> |
-| demo5 | <div align="center"><img width="200" height="auto" src="/image/demo5.gif"/></div> |
+| 源码中的示例动画名称 | 预览 | 源码中的示例动画名称 | 预览 |
+| :-: | :-: | :-: | :-: |
+| index | <div align="center"><img width="200" height="auto" src="/image/index.gif"/></div> | demo1 | <div align="center"><img width="200" height="auto" src="/image/demo1.gif"/></div> |
+| demo2 | <div align="center"><img width="200" height="auto" src="/image/demo2.gif"/></div> | demo3 | <div align="center"><img width="200" height="auto" src="/image/demo3.gif"/></div> |
+| demo4 | <div align="center"><img width="200" height="auto" src="/image/demo4.gif"/></div> | demo5 | <div align="center"><img width="200" height="auto" src="/image/demo5.gif"/></div> |
