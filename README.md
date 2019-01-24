@@ -22,10 +22,10 @@
 ![示例图](/image/sample.gif)
 
 | 代码中的示例动画名称 | 预览 |
-|-------------------|-----|
-| index | ![index](/image/index.gif) |
-| demo1 | ![demo1](/image/demo1.gif) |
-| demo2 | ![demo2](/image/demo2.gif) |
-| demo3 | ![demo3](/image/demo3.gif) |
-| demo4 | ![demo4](/image/demo4.gif) |
-| demo5 | ![demo5](/image/demo5.gif) |
+| :-: | :-: |
+| index | <div align="center"><img width="200" height="auto" src="/image/index.gif"/></div> |
+| demo1 | <div align="center"><img width="200" height="auto" src="/image/demo1.gif"/></div> |
+| demo2 | <div align="center"><img width="200" height="auto" src="/image/demo2.gif"/></div> |
+| demo3 | <div align="center"><img width="200" height="auto" src="/image/demo3.gif"/></div> |
+| demo4 | <div align="center"><img width="200" height="auto" src="/image/demo4.gif"/></div> |
+| demo5 | <div align="center"><img width="200" height="auto" src="/image/demo5.gif"/></div> |
