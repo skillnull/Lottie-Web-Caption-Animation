@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">index</a>
+    <a href="html/demo1.html">demo1</a>
+    <a href="html/demo2.html">demo2</a>
+    <a href="html/demo3.html">demo3</a>
+</nav>
+<div id="animation" class="animation-box"></div>
+<div class="methods">
+    <ul>
+        <li onclick="testSetting('play')">play</li>
+        <li onclick="testSetting('pause')">pause</li>
+        <li onclick="testSetting('togglePause')">togglePause</li>
+        <li onclick="testSetting('stop')">stop</li>
+        <li onclick="testSetting('destroy')">destroy</li>
+        <li onclick="testSetting('setSpeed')">setSpeed x 2</li>
+        <li onclick="testSetting('goToAndStop500ms')">go to the 500th milliseconds and stop</li>
+        <li onclick="testSetting('goToAndStop50frame')">go to the 50th frame and stop</li>
+        <li onclick="testSetting('setItalic')">set font style Italic</li>
+        <li onclick="testSetting('setBold')">set font style Bold</li>
+        <li onclick="testSetting('setUnderline')">set textDecoration underline</li>
+        <li onclick="testSetting('changeText')">
+            <input type="text" id="changeInput"><span>change text and set fontSize 40</span>
+        </li>
+    </ul>
+</div>
+<script src="js/lottie.min.js"></script>
+<script>
+let anim = lottie.loadAnimation({
+    path: 'json/index.json', // json文件路径
+    loop: true,
+    autoplay: true,
+    renderer: 'svg', // 渲染方式，有"html"、"canvas"和"svg"三种
+    container: document.getElementById('animation')
+})
+
+let changeInput = document.querySelector('#changeInput')
+let obj = {}
+Object.defineProperty(obj, "value", {
+    configurable: true,
+    get: () => {
+        return changeInput.value
+    },
+    set: (newValue) => {
+        changeInput.value = newValue
+    }
+})
+
+function testSetting (methods) {
+    switch (methods) {
+        case 'play': // 播放该动画，从目前停止的帧开始播放
+            lottie.play()
+            break
+        case 'pause': // 暂停该动画，在当前帧停止并保持
+            lottie.pause()
+            break
+        case 'togglePause': // 暂停该动画，在当前帧停止并保持，再次点击从当前位置播放
+            lottie.togglePause()
+            break
+        case 'stop': // 停止播放该动画，回到第0帧
+            lottie.stop()
+            break
+        case 'destroy': // 删除该动画，移除相应的元素标签等。在unmount的时候，需要调用该方法
+            lottie.destroy()
+            break
+        case 'setSpeed': // 设置播放速度，speed为1表示正常速度
+            lottie.setSpeed(2)
+            break
+        case 'goToAndStop500ms': // 跳到第500ms并停止播放
+            lottie.goToAndStop(500, false)
+            break
+        case 'goToAndStop50frame': // 跳到第50帧并停止播放
+            lottie.goToAndStop(50, true)
+            break
+        case 'changeText': // 改变文本内容
+            if (obj.value === '') return
+            anim.renderer.elements[0].updateDocumentData({t: obj.value, s: 40}, 0)
+            break
+        case 'setItalic': // 改变文本样式为斜体
+            document.querySelector('#first_text').style.fontStyle = 'italic'
+            break
+        case 'setBold': // 改变文本样式为加粗
+            document.querySelector('#first_text').style.fontWeight = 'bold'
+            break
+        case 'setUnderline': // 为文本添加下划线
+            document.querySelector('#first_text').style.textDecoration = 'underline'
+            break
+        default:
+            break
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #e24545;
+    padding: 3px 5px 5px;
+}
+
+a:hover {
+    box-shadow: 0 0 2px #e24545;
+}
+
+nav {
+    text-align: center;
+}
+
+.animation-box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+.methods ul {
+    color: white;
+    cursor: pointer;
+}
+
+.methods ul li {
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: #e24545;
+    margin: 6px;
+    border-radius: 6px;
+}
