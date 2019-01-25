@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo4</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body style="background: black;">
+<nav>
+    <script type="text/javascript" src="../js/nav.js"></script>
+</nav>
+<div id="animation7" class="animation-box"></div>
+<script src="../js/lottie.min.js"></script>
+<script>
+lottie.loadAnimation({
+    path: '../json/demo7.json', // json文件路径
+    loop: true,
+    autoplay: true,
+    renderer: 'svg',  // 渲染方式，有"html"、"canvas"和"svg"三种
+    container: document.getElementById('animation7')
+});
+</script>
+</body>
+</html>s
