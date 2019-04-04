@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://www.skillnull.com"><img src="https://skillnull.com/others/images/brand/MIT.svg" alt="License MIT"></a>
+    <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="License"></a>
+</p>
+
 ### Bodymovin导出json使用lottie-web实现字幕标题动画样例
 > [点此查看具体 AE + bodymovin + lottie-web 使用教程](http://skillnull.com/20190108/%E5%89%8D%E7%AB%AF%E8%A7%A3%E6%94%BE%E7%94%9F%E4%BA%A7%E5%8A%9B%E4%B9%8B-%E5%8A%A8%E7%94%BB%EF%BC%88adobe-effects-bodymovin-lottie%EF%BC%89/)
 
